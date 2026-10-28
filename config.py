@@ -31,10 +31,10 @@ def _require_int_env(key: str) -> int:
 BOT_TOKEN: str = _require_env("TELEGRAM_BOT_TOKEN")
 ADMIN_USER_ID: int = _require_int_env("ADMIN_USER_ID")
 
-PAYMENT_BANK: str = os.getenv("PAYMENT_BANK", "BCA")
-PAYMENT_NUMBER: str = os.getenv("PAYMENT_NUMBER", "123-456-789")
-PAYMENT_NAME: str = os.getenv("PAYMENT_NAME", "Moca")
-SHOP_NAME: str = os.getenv("SHOP_NAME", "Toko Moca")
+PAYMENT_BANK: str = os.getenv("PAYMENT_EWALLET", "GOPAY/DANA")
+PAYMENT_NUMBER: str = os.getenv("PAYMENT_NUMBER", "081295593189")
+PAYMENT_NAME: str = os.getenv("PAYMENT_NAME", "MULYANA")
+SHOP_NAME: str = os.getenv("SHOP_NAME", "Toko AZKA")
 DB_PATH: str = os.getenv("DB_PATH", "data/bot.db")
 
 # KlikQRIS payment gateway (opsional — jika kosong, fallback ke info transfer manual)
